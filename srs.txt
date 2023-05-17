@@ -1,0 +1,121 @@
+Document:System Requirement Specification Document
+
+Title:System Reqruiement Spefication for Online Shopping Portal
+
+Team:
+	Direct Customer, Indirect Customer,Architect, Business Analyst
+	Quality Assurance Team,
+	System Analyst
+
+Objective (Purpose):
+	The online ticket booking System for Customer Web Applictaion is intended to  provide complete solution for Ticket Booking, Consumers as well as internal users (Staff)  through  a single Gateway using 
+	internet. It will enable vendors to setp up online tickets, customers to browse through virtual counter	and Ticket booking detail online without any  physical shop  or office.
+
+Scope:
+	This System allows Staff to maintain thier ticket Booking count and avaibility of ticket for book tickets from window
+	their availablity.Customer will be able to  review booking history and may able to cancel booking within
+	24 hours , ticket booked.
+	The System  will be able to show live Bussiness Operation statistics trends through Customized dashboard
+	for stakeholders.
+
+Definitions:
+	OSS: Online Shopping System
+	QA:  Quality Assurance
+	Portal: Peronalized Online Web Application
+	MIS: Management Information System
+	CRM: Customer Relation Managment
+	BI:  Business Intelligence
+	Dashboard: Personalized information presented using  BI techniques such grid, score card, graph
+
+Requirements:
+
+Functional Requirements:
+
+	Any annonymous User will be able to view avaibilty of ticket for booking. Any User will be able select available transportation rout to view
+	from categories avaialble. Registered transporters will be able promote thier transport facility for booking by adding  details to the booking
+	catalog maintained by System.Staff will be able to approve or reject request for adding or removing products from product
+	catalog by shoppers. Staff will be to track and maintain Booking of tickets available to Booked..
+	
+	Transport venders will be able request to add new details to booking catalog maintained by system.
+	vender will be able to update  details which have been already added to booking catalog. 
+ 
+         Consumer will be able to  add or remove own details from catlog.
+         Registered Customer will be able place an Booking with the help of Booking catlog portal maintained by system. Registered Customer will be 
+	 able to cancel booked ticket within 24 hours. Registered customer get orders history. Registered customer can get details of booking
+	 from portal. 
+			
+   	 Consumer will be provided options for payment such as through internet banking  or  UPI  or Online payment option.
+ 	 Consumer will asked to submit their payment related information.Consumer will be redirected to payment gateway for secure payment
+	 transaction.On successful payment processing using payment gateway system will notify consumer about transaction and order placement
+	 status.
+
+         Customer will be able track booking status.
+         Customer will able to submit feedback about booking experience they recived. Customer will able to  get details about booking placed.
+	 Customer will be cancel his placed order within 24 hours. Customer will be able to update his/ her personal information. 
+	 Customer  will be to manage his profile maintained by system. Customer will be able change his credentails if required.
+	 Customer will get complete information about his orders, likes, comments, details through a dashboard.
+	 Customer will be able to update his payment related information.
+
+	 System will present dashboard for Customers, Vendors, Suppliers as well as BOD.
+
+NonFunctional Requirement:
+
+Security
+Registered Customer will be allowed to book online ticket.	
+Each stakeholder will be to access system  through authentication process. 
+System will provide access to  the content , operations using Role based security (Authorization) (Permissions based on Role)
+Using SSL in all transactions  which will be performed stakeholder. 
+It would protect confidential information shared by system to 
+		stake holder of Shared by stakeholder to system.
+System will automatically log of  all stakeholder after some time due to inactiveness.
+System will block operations for inactive  stakeholder and would redirect for authentication.
+System  will internally maintain secure communiction channel between Servers ( Web Servers, App Servers, databse Server)
+		Sensitive data will be always encrypted across communcation.
+		User proper firewall to protect servers from out side fishing, velnerable attacks.
+
+
+Reliability
+The system will backup business data on regular basis and recover in short time duration to keep system operational Continous updates are matained, continous Adminstration is done to keep system operational.
+During peak hours system will maintain same user experaince by managing load balacning .
+
+Availability
+	uptime:   24* 7  available
+		 99.999%
+
+Maintainability:
+		A Commercial database software will be used to maintain System data Persistence.
+		A readymade Web Server will be installed to host online shopping portal (Web Site) to management server capabilities.
+		IT operations team will easily monitor and configure System using Adminstrative tools provided by Servers.
+		Separate enviornment will be maintained for system for isolation in  production, testing, and development.
+
+Portablility:
+ PDA: Portable Device Application
+ System will provide portable User Interface ( HTML, CSS, JS) through  users will be able to access online Booking portal.
+ System can be deployed to single server, multi server, to any OS, Cloud (Azure or AWS or GCP)
+
+Accessibility:
+only registered customer will be able to book ticket after authentication.
+Sales team can reject or approve  orders, shopper requests  based on role  provided.
+BOD team will be able to view daily, weekly, monthly, annual businss Growth throgh customized dashboard.
+
+Durability:
+System will retain customer  booking portal for 15 minutes  even though customer loose internet connection and join again.
+System will implement backup and recovery for retaining stake holders data, bussiness operation data and business data over time.
+
+Efficiency:
+on Festival season, maximum number of users  will book ticket.
+System will be able to manage all transactions with isolation.
+Modularity:
+System will designed and developed using reusable, independent or dependent business senarios in the form of modules.
+These modules will be loosely coupled and highly cohesive.
+System will contain CRM , Inventory , booking portal, booking processing, payment processing, membership and Roles managment modules.
+	
+Scalability:
+System will be able  to  provide  consistent user exeprience to stake holder as well as vistors irrespective of load.
+
+Safety:
+Online booking portal will be secure from malicious attack, fishing.
+Online booking portal functionalilites are protected from outside with prper firewall configuration.
+Online booking portal will be always kept updated with latest anit virus software.
+Bussiness data will be backed up periodically to ensure safty of data using increamental back up strategy.
+Role based security will be applied for Application data and operations accessibility. 	
